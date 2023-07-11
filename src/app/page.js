@@ -17,6 +17,8 @@ export default function Home() {
           <CustomButton icon={<BiLogoBlender size={22} />} text="Nitro" />
           <CustomButton icon={<BsFillEnvelopeFill size={22} />} text="Message Requests" />
           <Category icon={<BsPlus size={22} />} text="Direct Messages" />
+
+          <Contacts icon={<BsPlus size={22} />} name="Direct Messages" />
         </div>
       </div>
       <div className="flex-col w-[70%] h-screen bg-[#313338]">
@@ -44,6 +46,15 @@ const Category = ({ icon, text }) => {
         {text}
       </span>
       {icon}
+    </div>
+  )
+}
+
+const Contacts = ({icon, name}) => {
+  return(
+    <div className="px-4 flex justify-start items-center gap-4 wi-full text-white">
+      {icon}
+      {name}
     </div>
   )
 }
