@@ -16,6 +16,15 @@
   }
   
   .custom-button{
-    @apply flex justify-start items-center w-full gap-5 text-[#949ba5] px-4 py-2 rounded-md hover:text-gray-400 hover:bg-[#35373C];
+    @apply flex justify-start items-center w-full gap-5 text-[#949ba5] px-3 py-2 rounded-md hover:text-gray-400 hover:bg-[#35373C];
+  }
+  
+  .category-text{
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1rem;
+    letter-spacing: 0.02rem;
+    text-transform: uppercase;
   }
 }
