@@ -1,4 +1,6 @@
 import HorizontalDark from "@/components/HorizontalDark";
+import { BsPeopleFill, BsFillEnvelopeFill } from 'react-icons/bs'
+import { BiLogoBlender } from 'react-icons/bi'
 
 export default function Home() {
   return (
@@ -11,12 +13,25 @@ export default function Home() {
         </div>
         <HorizontalDark />
         <div className="p-2 h-full bg-[#2B2D31]">
-          
+          <CustomButton icon={<BsPeopleFill size={22} />} text="Friends" />
+          <CustomButton icon={<BiLogoBlender size={22} />} text="Nitro" />
+          <CustomButton icon={<BsFillEnvelopeFill size={22} />} text="Message Requests" />
         </div>
       </div>
       <div className="flex-col w-[75%] h-screen bg-[#313338]">
 
       </div>
     </section>
+  )
+}
+
+const CustomButton = ({ icon, text }) => {
+  return (
+    <button className='custom-button'>
+      {icon}
+      <span className="text-sm">
+        {text}
+      </span>
+    </button>
   )
 }
