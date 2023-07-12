@@ -6,7 +6,7 @@ import { CompassIcon } from "@/components/Icons";
 
 const SideBar = () => {
     return (
-        <div className='fixed top-0 left-0 h-screen w-16 m-0 flex flex-col align-middle items-center gap-2 bg-gray-900 text-white shadow py-2'>
+        <div className='fixed bordex-box top-0 left-0 h-screen m-0 flex flex-col align-middle items-center gap-2 bg-gray-900 text-white shadow py-2 w-[72px] overflow-hidden'>
             <SideBarLogo icon={<BsDiscord size={28} />} text='Direct Messages' href="#"/>
             <hr className='w-[50%] mx-auto bg-gray-800 text-gray-800 h-[2px] border-0 rounder-sm'href="#"/>
             <SideBarIcon icon={<BsPlus size={32} />} text='Add a Server' href="#"/>
