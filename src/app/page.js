@@ -1,6 +1,6 @@
 import HorizontalDark from "@/components/HorizontalDark";
-import { BsPeopleFill, BsFillEnvelopeFill, BsPlus } from 'react-icons/bs'
-import { BiLogoBlender } from 'react-icons/bi'
+import { BsPlus } from 'react-icons/bs'
+import { FriendsIcon, NitroIcon, MessageReqIcon } from "@/components/Icons";
 
 export default function Home() {
   return (
@@ -13,9 +13,9 @@ export default function Home() {
         </div>
         <HorizontalDark />
         <div className="p-2 h-full bg-[#2B2D31]">
-          <CustomButton icon={<BsPeopleFill size={22} />} text="Friends" />
-          <CustomButton icon={<BiLogoBlender size={22} />} text="Nitro" />
-          <CustomButton icon={<BsFillEnvelopeFill size={22} />} text="Message Requests" />
+          <CustomButton icon={<FriendsIcon />} text="Friends" />
+          <CustomButton icon={<NitroIcon size={22} />} text="Nitro" />
+          <CustomButton icon={<MessageReqIcon size={22} />} text="Message Requests" />
           <Category icon={<BsPlus size={22} />} text="Direct Messages" />
 
           <Contacts icon={<BsPlus size={22} />} name="Direct Messages" />

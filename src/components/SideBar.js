@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import React from 'react'
 import { BsPlus, BsCompassFill, BsDiscord, BsDownload } from 'react-icons/bs'
+import { CompassIcon } from "@/components/Icons";
 
 
 const SideBar = () => {
